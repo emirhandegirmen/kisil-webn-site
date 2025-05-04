@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Referanslar - Kişisel Sayfa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Kişisel Sayfa</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="referanslar.html" class="active">Referanslar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="references-section">
+        <h2>Referanslar</h2>
+        <div class="card-container">
+           
+        <div class="logo-card-container">
+            <div class="logo-card">
+                <img src="c:/Users/USER/AppData/Local/Packages/MicrosoftWindows.Client.CBS_cw5n1h2txyewy/TempState/ScreenClip/{74E6238A-E838-4B0A-87AE-22FD661B2ADB}.png" alt="Referans Logo 1">
+            </div>
+            <div class="logo-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Referans Logo 2">
+            </div>
+            <div class="logo-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png" alt="Referans Logo 3">
+            </div>
+            <div class="logo-card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="Referans Logo 4">
+            </div>
+            <!-- İstediğiniz kadar logo ekleyebilirsiniz -->
+        </div>
+    </section>
+<style>
+    body {
+        background: linear-gradient(120deg, #232526 0%, #414345 100%);
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar {
+        width: 100%;
+        background: rgba(34, 34, 34, 0.98);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+        backdrop-filter: blur(6px);
+    }
+    .nav-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        height: 80px;
+    }
+    .nav-logo {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #ffd700;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 8px #222;
+        margin-bottom: 4px;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links li {
+        display: flex;
+        align-items: center;
+    }
+    .nav-links a {
+        color: #f4f4f4;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.08rem;
+        padding: 8px 18px;
+        border-radius: 22px;
+        transition: background 0.2s, color 0.2s;
+        position: relative;
+    }
+    .nav-links a.active,
+    .nav-links a:hover {
+        background: #ffd700;
+        color: #232526;
+        box-shadow: 0 2px 8px #2222;
+    }
+    .references-section {
+        background: rgba(34, 34, 34, 0.92);
+        border-radius: 18px;
+        box-shadow: 0 4px 18px 0 rgba(31, 38, 135, 0.18);
+        max-width: 900px;
+        width: 95%;
+        margin: 100px auto 24px auto;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .references-section h2 {
+        color: #ffd700;
+        margin-bottom: 24px;
+    }
+    .card-container {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .ref-card {
+        background: #232526;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        padding: 24px 18px;
+        width: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 18px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .ref-card:hover {
+        transform: translateY(-6px) scale(1.04);
+        box-shadow: 0 6px 24px #2226;
+    }
+    .ref-card img {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        margin-bottom: 14px;
+        border: 3px solid #ffd700;
+        object-fit: cover;
+        background: #fff;
+    }
+    .ref-card h3 {
+        margin: 0 0 8px 0;
+        color: #ffd700;
+        font-size: 1.15rem;
+    }
+    .ref-card p {
+        margin: 0;
+        color: #e0e0e0;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .ref-company {
+        color: #ffd700;
+        font-weight: 600;
+        font-size: 0.98em;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .company-logo {
+        width: 22px;
+        height: 22px;
+        border-radius: 4px;
+        background: #fff;
+        object-fit: contain;
+        border: 1px solid #eee;
+        box-shadow: 0 1px 4px #2222;
+        margin-right: 3px;
+    }
+    .logo-card-container {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+    .logo-card {
+        background: #232526;
+        border-radius: 16px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.18);
+        padding: 24px 18px;
+        width: 210px;
+        height: 210px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 18px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .logo-card:hover {
+        transform: translateY(-6px) scale(1.04);
+        box-shadow: 0 6px 24px #2226;
+    }
+    .logo-card img {
+        max-width: 160px;
+        max-height: 160px;
+        object-fit: contain;
+        background: #fff;
+        border-radius: 12px;
+        padding: 12px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    @media (max-width: 900px) {
+        .card-container {
+            gap: 16px;
+        }
+        .references-section {
+            padding: 16px 4px;
+        }
+        .logo-card-container {
+            gap: 16px;
+        }
+    }
+    @media (max-width: 600px) {
+        .nav-container {
+            flex-direction: column;
+            height: auto;
+            padding: 8px;
+        }
+        .nav-links {
+            gap: 10px;
+        }
+        .references-section {
+            padding: 12px 2px;
+            margin: 80px auto 16px auto;
+        }
+        .card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .ref-card {
+            width: 90%;
+        }
+        .logo-card-container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo-card {
+            width: 90%;
+            height: 160px;
+        }
+    }
+</style>
+</body>
+</html>

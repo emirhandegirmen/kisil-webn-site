@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Sayfa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Kişisel Sayfa</span>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="referanslar.html">Referanslar</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="anasayfa">
+        <img class="styled-img" src="assets2Ftask_01jsar39ydfxeah3ybe8nc3hy42Fimg_0.png" alt="Profil Fotoğrafı">
+        <h1>Hoşgeldiniz</h1>
+        <h2>Bu sayfada sizlere kendimden bahsedeceğim <span class="highlight">Ben</span></h2>
+        <section class="about">
+            <h2>Ben Kimim?</h2>
+            <p>Merhaba, ben bir yazılımcıyım. Özellikle <b>PHP</b> diliyle ilgileniyorum.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos placeat, quis id, sunt dolorum commodi quidem laudantium impedit iure repellendus ipsam ducimus, facilis consectetur necessitatibus vel provident nobis. Harum, facere!</p>
+        </section>
+        <section class="skills">
+            <h2><span class="star">&#9733;</span> Yeteneklerim</h2>
+            <div class="skills-icons">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" title="HTML5"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" title="CSS3"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP"/>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python"/>
+            </div>
+        </section>
+        <div class="github-link">
+            <a href="https://github.com/emirhandegirmen" target="_blank">
+                <i class="fab fa-github"></i> GitHub Profilim
+            </a>
+        </div>
+    </div>
+
+<style>
+    body {
+        background: linear-gradient(120deg, #232526 0%, #414345 100%);
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Modern Navbar stilleri */
+    .navbar {
+        width: 100%;
+        background: rgba(34, 34, 34, 0.98);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+        backdrop-filter: blur(6px);
+    }
+    .nav-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        height: 80px;
+    }
+    .nav-logo {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #ffd700;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 8px #222;
+        margin-bottom: 4px;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links li {
+        display: flex;
+        align-items: center;
+    }
+    .nav-links a {
+        color: #f4f4f4;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.08rem;
+        padding: 8px 18px;
+        border-radius: 22px;
+        transition: background 0.2s, color 0.2s;
+        position: relative;
+    }
+    .nav-links a.active,
+    .nav-links a:hover {
+        background: #ffd700;
+        color: #232526;
+        box-shadow: 0 2px 8px #2222;
+    }
+    .container {
+        background: rgba(34, 34, 34, 0.92);
+        border-radius: 24px;
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        padding: 48px 32px 32px 32px;
+        max-width: 600px;
+        width: 95%;
+        margin: 90px 0 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .styled-img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+        margin-bottom: 24px;
+        border: 4px solid #fff;
+        background: #fff;
+        transition: transform 0.3s;
+    }
+    .styled-img:hover {
+        transform: scale(1.07) rotate(-2deg);
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin: 0 0 12px 0;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #ffd700;
+        text-shadow: 2px 2px 8px #222;
+    }
+    h2 {
+        font-size: 1.5rem;
+        margin: 18px 0 10px 0;
+        font-weight: 600;
+        color: #fff;
+        text-align: center;
+    }
+    .highlight {
+        color: #ffd700;
+        font-weight: bold;
+    }
+    .about p {
+        font-size: 1.1rem;
+        color: #e0e0e0;
+        margin: 10px 0;
+        text-align: center;
+        line-height: 1.6;
+    }
+    .skills {
+        width: 100%;
+        margin-top: 24px;
+    }
+    .star {
+        color: #ffd700;
+        font-size: 1.2em;
+        vertical-align: middle;
+    }
+    .skills-icons {
+        display: flex;
+        justify-content: center;
+        gap: 28px;
+        margin: 18px 0 0 0;
+        flex-wrap: wrap;
+    }
+    .skills-icons img {
+        width: 54px;
+        height: 54px;
+        filter: drop-shadow(2px 2px 6px #222);
+        transition: transform 0.2s, background 0.2s;
+        background: rgba(255,255,255,0.07);
+        border-radius: 12px;
+        padding: 8px;
+    }
+    .skills-icons img:hover {
+        transform: scale(1.15) rotate(-5deg);
+        background: rgba(255,255,255,0.18);
+    }
+    .github-link {
+        margin-top: 32px;
+        text-align: center;
+    }
+    .github-link a {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: #232526;
+        color: #fff;
+        border-radius: 12px;
+        padding: 10px 22px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-decoration: none;
+        box-shadow: 0 2px 8px #2224;
+        transition: background 0.2s, color 0.2s;
+    }
+    .github-link a:hover {
+        background: #ffd700;
+        color: #232526;
+    }
+    .github-link i {
+        font-size: 1.4em;
+    }
+    @media (max-width: 600px) {
+        .nav-container {
+            flex-direction: column;
+            height: auto;
+            padding: 8px;
+        }
+        .nav-links {
+            gap: 10px;
+        }
+        .container {
+            padding: 24px 8px 16px 8px;
+            margin: 80px 0 16px 0;
+        }
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1.1rem;
+        }
+        .skills-icons img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+</style>
+</body>
+</html>

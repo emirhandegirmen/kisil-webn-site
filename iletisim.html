@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Kişisel Sayfa</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Modern Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <span class="nav-logo">Kişisel Sayfa</span>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+                <li><a href="referanslar.html">Referanslar</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="contact-section" id="iletisim">
+        <h2>İletişim</h2>
+        <form class="contact-form">
+            <input type="text" name="isim" placeholder="Adınız" required>
+            <input type="email" name="email" placeholder="E-posta" required>
+            <textarea name="mesaj" placeholder="Mesajınız" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+<style>
+    body {
+        background: linear-gradient(120deg, #232526 0%, #414345 100%);
+        min-height: 100vh;
+        margin: 0;
+        font-family: 'Montserrat', Arial, sans-serif;
+        color: #f4f4f4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* Modern Navbar stilleri */
+    .navbar {
+        width: 100%;
+        background: rgba(34, 34, 34, 0.98);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+        backdrop-filter: blur(6px);
+    }
+    .nav-container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 24px;
+        height: 80px;
+    }
+    .nav-logo {
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: #ffd700;
+        letter-spacing: 1px;
+        text-shadow: 1px 1px 8px #222;
+        margin-bottom: 4px;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 32px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-links li {
+        display: flex;
+        align-items: center;
+    }
+    .nav-links a {
+        color: #f4f4f4;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.08rem;
+        padding: 8px 18px;
+        border-radius: 22px;
+        transition: background 0.2s, color 0.2s;
+        position: relative;
+    }
+    .nav-links a.active,
+    .nav-links a:hover {
+        background: #ffd700;
+        color: #232526;
+        box-shadow: 0 2px 8px #2222;
+    }
+    .contact-section {
+        background: rgba(34, 34, 34, 0.92);
+        border-radius: 18px;
+        box-shadow: 0 4px 18px 0 rgba(31, 38, 135, 0.18);
+        max-width: 600px;
+        width: 95%;
+        margin: 100px auto 24px auto;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-section h2 {
+        color: #ffd700;
+        margin-bottom: 18px;
+    }
+    .contact-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: none;
+        font-size: 1rem;
+        background: #232526;
+        color: #f4f4f4;
+        resize: none;
+    }
+    .contact-form textarea {
+        min-height: 80px;
+        max-height: 200px;
+    }
+    .contact-form button {
+        background: #ffd700;
+        color: #232526;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+    .contact-form button:hover {
+        background: #e6c200;
+    }
+    @media (max-width: 600px) {
+        .nav-container {
+            flex-direction: column;
+            height: auto;
+            padding: 8px;
+        }
+        .nav-links {
+            gap: 10px;
+        }
+        .contact-section {
+            padding: 16px 4px;
+            margin: 80px auto 16px auto;
+        }
+    }
+</style>
+</body>
+</html>
