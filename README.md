@@ -1,6 +1,6 @@
 # Kişiye Özel Web Sitesi Tasarımı
 
-Bu proje, kişisel veya kurumsal ihtiyaçlara yönelik tamamen özelleştirilebilir bir web sitesi tasarımı sunar. Amacımız, kullanıcı dostu, modern ve estetik bir web deneyimi sağlamaktır.
+Bu proje, kişisel  ihtiyaçlara yönelik tamamen özelleştirilebilir bir web sitesi tasarımı sunar. Amacımız, kullanıcı dostu, modern ve estetik bir web deneyimi sağlamaktır.
 
 ## Özellikler
 
